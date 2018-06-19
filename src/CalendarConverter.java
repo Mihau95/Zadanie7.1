@@ -1,35 +1,30 @@
-public class CalandarConverter {
+public class CalendarConverter {
+    static final int MONDAY = 1;
+    static final int TUESDAY = 2;
+    static final int WEDNESDAY = 3;
+    static final int THURSDAY = 4;
+    static final int FRIDAY = 5;
+    static final int SATURDAY = 6;
+    static final int SUNDAY = 7;
 
-    static final int Monday = 1;
-    static final int Tuesday = 2;
-    static final int Wednesday = 3;
-    static final int Thursday = 4;
-    static final int Friday = 5;
-    static final int Saturday = 6;
-    static final int Sunday = 7;
-
-
-    public static String convertDayToString(int dayNumber) {
-        switch (dayNumber) {
-
-            case Monday:
+    public static String convertDayToString(int dayNumber){
+        switch (dayNumber){
+            case MONDAY:
                 return "Poniedziałek";
-            case Tuesday:
+            case TUESDAY:
                 return "Wtorek";
-            case Wednesday:
+            case WEDNESDAY:
                 return "Środa";
-            case Thursday:
+            case THURSDAY:
                 return "Czwartek";
-            case Friday:
+            case FRIDAY:
                 return "Piątek";
-            case Saturday:
+            case SATURDAY:
                 return "Sobota";
-            case Sunday:
+            case SUNDAY:
                 return "Niedziela";
             default:
                 return "Brak";
-
         }
     }
 }
-
